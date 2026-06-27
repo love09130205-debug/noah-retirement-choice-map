@@ -60,6 +60,7 @@ npm run dev
 - `leads` 資料表已啟用 RLS，沒有公開 SELECT／UPDATE／DELETE policy。
 - 前台不直接接觸 Supabase service role key；表單走 Next.js server route。
 - `ADMIN_PASSWORD` 與 `ADMIN_SESSION_SECRET` 必須設為強密碼／亂數，且只放在部署平台環境變數。
+- 若要顯示快速盤點 PDF 按鈕，將 `NEXT_PUBLIC_QUICK_CHECK_PDF_URL` 設為 `/retirement-choice-quick-check.pdf`；若不想顯示，留空即可。
 
 ## ManyChat 按鈕文字
 `開始我的退休選擇權盤點`
